@@ -30,6 +30,15 @@ def search(url: str) -> list:
     return result
 
 def announcement(url: str) -> dict:
+    """
+    獲取公告內容
+
+    Args:
+        url (str): 公告網址
+
+    Returns:
+        dict: 公告內容
+    """
     soup = _getHTML(url)
     title_text = soup.select("div.title span")[0].text
     post_date_text = soup.select("div[title=發布日期] .p span")[0].text
