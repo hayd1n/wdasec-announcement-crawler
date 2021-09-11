@@ -19,7 +19,7 @@ wdasec.search(url)
 wdasec.announcement(url)
 ```
 
-## 範例Examples
+## 範例 Examples
 > 範例程式在 [這裡](examples/example.py)
 ### 取得搜尋列表
 ```
