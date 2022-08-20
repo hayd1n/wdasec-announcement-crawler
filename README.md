@@ -11,22 +11,22 @@
 
 ## 使用方法 Usages
 ### 取得搜尋列表
-```
+```python
 wdasec.search(url)
 ```
 ### 取得公告內容
-```
+```python
 wdasec.announcement(url)
 ```
 
 ## 範例 Examples
 > 範例程式在 [這裡](examples/example.py)
 ### 取得搜尋列表
-```
+```python
 wdasec.search("https://www.wdasec.gov.tw/News.aspx?n=12FE9C104388A457&sms=FDDD385F34312990")
 ```
 返回結果
-```
+```python
 [{'post_date': '110-06-03',
   'title': '[全國賽]110第51屆全國技能競賽－賽前公告試題資料',
   'url': 'https://www.wdasec.gov.tw/News_Content.aspx?n=12FE9C104388A457&sms=FDDD385F34312990&s=CC6C5A2E2C03DD6B',
@@ -61,11 +61,11 @@ wdasec.search("https://www.wdasec.gov.tw/News.aspx?n=12FE9C104388A457&sms=FDDD38
   'views': '8128'}]
   ```
 ### 取得公告內容
-```
+```python
 wdasec.announcement("https://www.wdasec.gov.tw/News_Content.aspx?n=5279F68BA6EBB1E2&sms=DD855C7DF840A224&s=4C34600FB55F226E")
 ```
 返回結果
-```
+```python
 {'content': '<div class="p"> <p><span><br/><p>有關本次培訓應注意事項，說明如下：</p> <p '
             'align="left">一、時間:110年10月16、17日(星期六、日) '
             '共計2天；參加培訓應於當日上午9時整前完成報到（第一節課遲到15分鐘以上或中途缺課者，以未全程參與論）。</p> <p '
